@@ -2,14 +2,36 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Rock Gardens</title>
+  <title>Modularity mindfulness</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <ul class="skip-links">
+    <li><a href="#main" tabindex="0">Jump to middle of page content</a></li>
+    <li><a href="#nav" tabindex="0">Jump to navigation content</a></li>
+    <li><a href="#footer" tabindex="0">Jump to footer</a></li>
+  </ul>
 
-
-</body>
-</html>
+  <header role="banner" class="grid grid-middle">
+    <div class="unit xs-1 l-1-2 text-center pad-t-1-2 gutter-1-2">
+      <h1 class="yotta bold blk title push-0"><i class="not-italic" lang="ja">枯山水</i></h1>
+      <h2 class="en kilo blk title push-1-2">Rock Gardens</h2>
+    </div>
+    <nav class="unit xs-1 l-1-2 push-1-2 pad-b-1-2" role="navigation" id="nav" tabindex="0">
+      <ul class="list-group-inline nav text-center push-0">
+        <li class="ib gutter-1-4"><a class="nv bb pad-b-1-4 mega" href="#">Viewing</a></li>
+        <li class="ib gutter-1-4"><a class="nv bb pad-b-1-4 mega" href="#">Gravel</a></li>
+        <li class="ib gutter-1-4"><a class="nv bb pad-b-1-4 mega" href="#">Symbolism</a></li>
+      </ul>
+    </nav>
+    <div class="unit xs-1 embed embed-5by1">
+      <img class="img-flex embed-item" src="images/banner.svg" alt="">
+    </div>
+  </header>
