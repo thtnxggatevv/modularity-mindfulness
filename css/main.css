@@ -1,27 +1,98 @@
 html {
-  box-sizing: border-box;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
   font-family: "Noto Sans", sans-serif;
-  line-height: 1.5;
+  font-family: "Noto Sans Japanese", sans-serif;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.blk {
+  color: #000;
 }
 
-[lang="ja"] {
-  font-family: "Noto Sans JP", sans-serif;
-  font-style: normal;
+.bb {
+  border-bottom: 1px solid #8bc9d9;
+  border-width: thin;
 }
 
-body {
-  margin: 0;
+.nv {
+  text-decoration: none;
+  color: #005e76;
 }
 
-img {
-  display: block;
-  width: 100%;
+a {
+  text-decoration: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #8bc9d9;
+}
+
+.borderbottom {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.bordertop {
+  border-top: 1px solid #e2e2e2;
+}
+
+.btn-ghost {
+  border-color: #8bc9d9;
+  color: #005e76;
+}
+
+.btn-ghost:hover {
+  background-color: #8bc9d9;
+  border-color: #005e76;
+  color: #005e76;
+}
+
+.blue {
+  color: #0084a6;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .title {
+    text-align: left;
+  }
+
+  .nav {
+    text-align: right;
+  }
+
+  .squishtwo {
+    width: 15%;
+  }
+
+  .squish {
+    width: 70%;
+    text-align: center;
+  }
+
+  /* .adjust1 {
+    padding-top: .5rem;
+  } */
+
+}
+
+@media only screen and (min-width: 90em) {
+  /* .title {
+    padding-left: 7rem;
+  } */
+
+  /* .nav {
+    text-align: center;
+  } */
+
+  .squishtwo {
+    width: 25%;
+  }
+
+  .squish {
+    width: 50%;
+    text-align: center;
+  }
+
 }
