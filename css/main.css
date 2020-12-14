@@ -4,6 +4,7 @@ html {
   text-size-adjust: 100%;
   font-family: "Noto Sans", sans-serif;
   line-height: 1.5;
+  margin: 1em;
 }
 
 *,
@@ -26,126 +27,227 @@ img {
   width: 100%;
 }
 
-nav ul {
+header {
   display: flex;
-  list-style: none;
-  text-decoration: none;
-  padding: 0;
-  margin-top: 0;
+  align-items: center;
   text-align: center;
-  justify-content: space-around;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.headersub {
   font-size: 1.125rem;
-}
-
-nav a {
-  color: #3783a3;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.btn {
-  display: block;
-  text-decoration: none;
-  color: #3783a3;
-  border: .2rem solid #3783a3;
-  border-radius: .3rem;
-  padding: .5em 1em .6em;
-  text-align: left;
-  margin-top: 1.5em;
 }
 
 h1 {
-  text-align: center;
   margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 1em;
+}
+
+li a {
+  font-size: 1.125rem;
+  margin: 0 .5em;
+  padding: 0;
+  color: #3783a3;
+}
+
+.one {
+  text-align: center;
 }
 
 h2 {
-  text-align: center;
+  font-size: 2rem;
+  padding: 0 .5em;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: .7em;
+}
+
+.p-one {
+  padding: .7em;
   margin: 0;
-  font-size: 1.125rem;
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  margin-bottom: 1em;
+}
+
+div a {
+  border: .2rem solid #3783a3;
+  padding: .5em 1em .6em;
+  text-decoration: none;
+  color: #3783a3;
+  border-radius: .3rem;
+  display: flex;
+  margin-top: 1.3em;
 }
 
 h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0;
+  margin-top: 1em;
+  font-size: 1.4757rem;
 }
 
-h4 {
-  margin-top: 0;
-}
-
-header {
-  padding: 1rem 1rem 0;
-}
-
-main {
-  padding: 0 1rem;
-}
-
-article p i {
-  font-size: 2rem;
-}
-
-article p {
-  text-align: center;
+.spanh3 {
   font-size: 1rem;
-  padding: .4em 1em 1.1em;
-  margin: 0;
-}
-
-.banner-content {
-  margin: 1.4em 0;
-}
-
-hr {
-  border: 1.5px solid #e2e2e2;
-  width: 100%;
 }
 
 footer {
   text-align: center;
+  margin-top: 1.5em;
+}
+
+footer p {
+  margin-top: 0;
+  font-size: .8232rem;
+  padding: 1.5em;
+}
+
+.second {
+  margin: 1em 0 1.5em;
+  border-width: 2px;
+  border-top: 1px solid #e2e2e2;
+}
+
+.line {
+  margin-top: 2em;
+  margin-bottom: 0;
+  border-width: 2px;
+  border-top: 1px solid #e2e2e2;
+}
+
+.first {
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  border-width: 2px;
+  border-top: 1px solid #e2e2e2;
 }
 
 @media only screen and (min-width: 38em) {
 
-  .grid {
+  html {
+    font-size: 100%;
+    line-height: 1.3;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.3rem;
+  }
+
+  .two {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
     grid-gap: 1rem;
-    justify-content: space-around;
+    margin-bottom: 1em;
   }
 
-  .header-grid {
-    display: grid;
-    grid-template-areas: "title nav";
-    margin-bottom: 1rem;
-    align-items: center;
-  }
-
-  .h1-h2 {
-    grid-area: title;
-  }
-
-  nav {
-    grid-area: nav;
-  }
-
-  h1, h2 {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
     text-align: left;
   }
 
-  nav ul {
-    margin: 0;
+  .one {
+    margin: 0 3em;
   }
 
-  .banner-content {
-    max-width: 30em;
-    margin-left: auto;
-    margin-right: auto;
+  .second {
+    margin: 0 0 2em;
+  }
+
+  h2 {
+    margin-bottom: .5em;
+  }
+
+  .p-one {
+    margin-bottom: 1.5em;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+
+  .all {
+    flex-grow: 1;
+    margin-bottom: 1em;
+  }
+
+  .line {
+    margin-top: 1em;
+  }
+
+  .footer {
+    margin-bottom: .5em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.5rem;
+  }
+
+  .one {
+    margin: 0 12em;
+  }
+
+  h2 {
+    font-size: 1.7em;
+    margin: .4em 0 0;
+  }
+
+  .p-one {
+    font-size: .9em;
+    margin-bottom: .5em;
+  }
+
+  h1 {
+    font-size: 1.7em;
+    margin-bottom: .5em;
+  }
+
+  .headersub {
+    font-size: .6em;
+  }
+
+  li a {
+    font-size: 1em;
+  }
+
+  .second {
+    margin-bottom: 1.5em;
+  }
+
+  .all {
+    font-size: .8em;
+  }
+
+  a {
+    font-size: .6em;
+  }
+
+  h3 {
+    font-size: 1.3em;
   }
 
 }
